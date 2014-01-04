@@ -1,0 +1,54 @@
+{
+    
+    "name": "cloud-anarchy-evaro",
+    "description": "Interaction analytics for DJ interaction and follow-up",
+    "version": "0.1",
+    "category": "analytics",
+    "main": "public/javascripts/app_module.js",
+    "config":{
+        "details":{
+            "Language": "English",
+            "Price": "Free",
+            "Restrictions": "GPL2",
+            "TOS":"http://api.ukdj.me/terms",
+            "has_js": true
+        }, 
+        "assets":{
+            "logos" : {
+                "200px": "./public/images/logo-200.png",
+                "132px": "./public/images/logo-132.png"
+            },
+            "detail_page" : [
+                "./public/images/example.png"
+            ],
+            "images" : [
+                "./public/images/counter.png"
+            ]
+        },
+        "interface": [
+            {
+                "type": "select",
+                "id": "lottery",
+                "name": "Did you gig last night?",
+                "description": "Select whether you attended your gig.",
+                "options": [
+                    {
+                        "label": "Yes",
+                        "value": "true"
+                    },
+                    {
+                        "label": "No",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "account": {
+        "callback_url": "http://api.ukdj.me/",
+        "user_fields": ["email"]
+    },
+    
+        ]  
+    }
+}
