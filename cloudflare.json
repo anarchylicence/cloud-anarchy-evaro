@@ -47,7 +47,7 @@
     "account": {
         "callback_url": "http://api.ukdj.me/",
         "user_fields": ["email"]
-    },
+    }
     
         ]  
     }
